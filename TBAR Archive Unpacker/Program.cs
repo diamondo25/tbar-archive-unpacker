@@ -265,6 +265,8 @@ namespace TBAR_Archive_Unpacker
                         ext = ".ogg";
                     else if (cleanData[0] == 0x42 && cleanData[1] == 0x4D && cleanData[2] == 0x46)
                         ext = ".bmf";
+                    else if (cleanData[0] == 0x52 && cleanData[1] == 0x49 && cleanData[2] == 0x46 && cleanData[3] == 0x46)
+                        ext = ".wav";
 
                     if (compressed)
                         ext = "_compressed" + ext;
